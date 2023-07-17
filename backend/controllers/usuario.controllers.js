@@ -33,7 +33,8 @@ const agregarUsuario = async (req, res) => {
 
 const borrarUsuario = async (req, res) => {
     try {
-        await Usuario.deleteOne({ _id: req.params.id });
+        await 
+        Usuario.deleteOne({ _id: req.params.id });
         res.status(200).send({
             response: "Eliminado correctamente."
         });
